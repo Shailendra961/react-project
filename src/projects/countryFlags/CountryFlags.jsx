@@ -28,13 +28,11 @@ const CountryFlags = () => {
 
   //Search Functionality
 
-  const searchData = flagData.filter((curCountry)=>curCountry.name.common.toLowerCase().includes(search.toLowerCase()))
-  //const regionSearchData = flagData.filter((curCountry)=>curCountry.region.toLowerCase().includes(regionSearch.toLowerCase()))
-
+  const searchData = flagData.filter((curCountry)=>curCountry.name.common.toLowerCase().includes(search.toLowerCase()));
   return (
     <>
       <section>
-        <div className="container mx-auto px-10">
+        <div className="container mx-auto px-5 md:px-10">
           <div className="md:grid grid-cols-2 gap-4 my-10">
             <div>
               <div className="relative text-slate-500">
